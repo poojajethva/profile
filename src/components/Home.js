@@ -26,7 +26,7 @@ export default class Home extends Component{
                         <span className="sign"> /&gt;</span>;
                     </p>
                     <p className="line2">
-                        I’m <span className="txt2">UI Developer</span>.
+                        I’m a <span className="txt2">UI Developer</span>.
                         <span className="cursor">|</span>
                     </p>
                 </div>
