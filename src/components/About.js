@@ -18,7 +18,7 @@ export default class About extends Component{
                     <p><span className="txt">When I am not coding / </span>designing, I like traveling, painting, cycling, crafting and watching movies.</p>
                 </div>
                 </Zoom>
-                <Link className="btn" to="profile/experience">View More</Link>
+                <Link className="btn" to="/profile/experience">View More</Link>
             </div>
         )
     }

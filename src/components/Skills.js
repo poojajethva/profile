@@ -26,7 +26,7 @@ export default class Skills extends Component{
                     <span className="skill skill9">PHP</span>
                 </div>
                 </Zoom>
-                <Link className="btn" to="profile/contact">View More</Link>
+                <Link className="btn" to="/profile/contact">View More</Link>
             </div>
         )
     }
