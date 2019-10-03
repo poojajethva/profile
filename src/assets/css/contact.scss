@@ -1,0 +1,25 @@
+$white: #fff;
+$black: #000;
+$red: #ec276d;
+$yellow: #e6db74;
+$blue:  #66d9ef;
+
+.contact{
+    .content{
+        .maillink{
+            color: $yellow;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .maillink:hover{
+            text-decoration: underline;
+        }
+        .social{
+            position: relative;
+            left: auto;
+            bottom: auto;
+            transform: none;
+            margin: 10px 20px;
+        }
+    }
+}

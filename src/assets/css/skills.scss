@@ -1,0 +1,45 @@
+$white: #fff;
+$black: #000;
+$red: #ec276d;
+$yellow: #e6db74;
+$blue:  #66d9ef;
+
+.skills{
+    .content{
+        max-width: 600px;
+        .skill{
+            padding: 10px 15px;
+            background: $red;
+            color: #000;
+            margin: 15px;
+            display: inline-block;
+            position: relative;
+            border-top: 5px solid rgba(255, 255, 255, 0.5);
+        }
+        .skill:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255,255,255,0.4);
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+        }
+        .skill:hover:after{
+            width: 120%;
+            background-color: rgba(255,255,255,0);
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .skill:nth-child(2n){
+            background: $blue;
+        }
+        .skill:nth-child(3n){
+            background: $yellow;
+        }
+    }
+}
