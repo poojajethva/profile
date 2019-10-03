@@ -42,6 +42,18 @@ $green: #86b42b;
         font-size: 40px;
         color: $white;
         position: relative;
+        overflow: hidden;
+        
+        p{
+            overflow: hidden;
+            white-space: nowrap;
+            animation: type 4s steps(60, end);
+            margin: 3px auto;
+        }
+        .line2{
+            animation: type2 8s steps(60, end);
+          }
+
         .txt{
             color: $red;
             font-weight: bold;
@@ -49,7 +61,25 @@ $green: #86b42b;
         .txt2{
             color: $yellow;
         }
+        .cursor{
+            animation: blink 1s infinite;
+        }
     }
+
+    @keyframes type{ 
+        from { width: 0; } 
+        to {width: 100%;}
+      } 
+
+      @keyframes blink{
+        to{opacity: .0;}
+      }
+
+      @keyframes type2{
+        0%{width: 0;}
+        50%{width: 0;}
+        100%{ width: 100%; } 
+      } 
     
     .btnHome{
         font-size: 16px;

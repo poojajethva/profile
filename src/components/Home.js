@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Zoom from 'react-reveal/Zoom';
 import '../assets/css/home.scss';
 
 export default class Home extends Component{
@@ -20,14 +19,17 @@ export default class Home extends Component{
         return (
             <div className="home" onMouseMove={this.moveMagicBg.bind(this)}>
                 <div className="magic" style={this.state}></div>
-                <Zoom>
-                <p className="content">
-                    Hi, I’m&nbsp;<span className="sign">&lt;</span>
-                    <span className="txt">Pooja Jethva</span>
-                    <span className="sign"> /&gt;</span>;<br />
-                    I’m <span className="txt2">UI Developer</span>.
-                </p>
-                </Zoom>
+                <div className="content">
+                    <p className="line1">
+                        Hi, I’m&nbsp;<span className="sign">&lt;</span>
+                        <span className="txt">Pooja Jethva</span>
+                        <span className="sign"> /&gt;</span>;
+                    </p>
+                    <p className="line2">
+                        I’m <span className="txt2">UI Developer</span>.
+                        <span className="cursor">|</span>
+                    </p>
+                </div>
                 <Link className="btnHome" to="/about">View More</Link>
             </div>
         )
