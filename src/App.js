@@ -17,7 +17,6 @@ function App() {
               <Route path="/profile/skills" component={Skills} />
               <Route path="/profile/experience" component={Experience} />
               <Route path="/profile/contact" component={Contact} />
-              <Route path="/" component={Home} />
             </Switch>
           </Router>
   );
