@@ -42,11 +42,11 @@ export default class Menu extends Component{
                 <nav role="navigation" ref={node => this.node = node}>
                     <div className="menu-toggle" onClick={this.toggleMenu.bind(this)}><span>Menu</span></div>
                     <ul className="menu">
-                        <li><NavLink to="/profile/" exact activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Home</span></NavLink></li>
-                        <li><NavLink to="/profile/about" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>About</span></NavLink></li>
-                        <li><NavLink to="/profile/skills" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Skills</span></NavLink></li>
-                        <li><NavLink to="/profile/experience" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Experience</span></NavLink></li>
-                        <li><NavLink to="/profile/contact" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Contact</span></NavLink></li>
+                        <li><NavLink to="/" exact activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Home</span></NavLink></li>
+                        <li><NavLink to="/about" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>About</span></NavLink></li>
+                        <li><NavLink to="/skills" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Skills</span></NavLink></li>
+                        <li><NavLink to="/experience" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Experience</span></NavLink></li>
+                        <li><NavLink to="/contact" activeClassName="active" onClick={this.hideMenu.bind(this)}><span>Contact</span></NavLink></li>
                     </ul>
                 </nav>
         );

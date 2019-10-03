@@ -30,7 +30,7 @@ export default class Experience extends Component{
                     </ul>
                 </div>
                 </Zoom>
-                <Link className="btn" to="/profile/skills">View More</Link>
+                <Link className="btn" to="/skills">View More</Link>
             </div>
         )
     }

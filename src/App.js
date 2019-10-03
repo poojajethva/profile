@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -9,16 +9,16 @@ import Menu from './components/Menu';
 
 function App() {
   return (
-          <Router>
-            <Menu />    
+          <HashRouter basename="/">
+            <Menu />
             <Switch>
-              <Route exact path="/profile/" component={Home} />
-              <Route path="/profile/about" component={About} />
-              <Route path="/profile/skills" component={Skills} />
-              <Route path="/profile/experience" component={Experience} />
-              <Route path="/profile/contact" component={Contact} />
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/experience" component={Experience} />
+              <Route path="/contact" component={Contact} />
             </Switch>
-          </Router>
+          </HashRouter>
   );
 }
 
