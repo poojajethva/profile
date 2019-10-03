@@ -28,7 +28,7 @@ export default class Home extends Component{
                     I’m <span className="txt2">UI Developer</span>.
                 </p>
                 </Zoom>
-                <Link className="btnHome" to="/about">View More</Link>
+                <Link className="btnHome" to="/profile/about">View More</Link>
             </div>
         )
     }

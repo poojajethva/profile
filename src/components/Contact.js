@@ -24,7 +24,7 @@ export default class Contact extends Component{
                         </p>
                     </div>
                     </Zoom>
-                    <Link className="btn" to="/">Go Back</Link>
+                    <Link className="btn" to="/profile/">Go Back</Link>
                 </div>
         )
     }
