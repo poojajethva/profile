@@ -12,11 +12,11 @@ function App() {
           <Router>
             <Menu />    
             <Switch>
-              <Route exact path="/profile/" component={Home} />
-              <Route path="/profile/about" component={About} />
-              <Route path="/profile/skills" component={Skills} />
-              <Route path="/profile/experience" component={Experience} />
-              <Route path="/profile/contact" component={Contact} />
+              <Route exact path="profile" component={Home} />
+              <Route path="profile/about" component={About} />
+              <Route path="profile/skills" component={Skills} />
+              <Route path="profile/experience" component={Experience} />
+              <Route path="profile/contact" component={Contact} />
               <Route path="/" component={Home} />
             </Switch>
           </Router>
