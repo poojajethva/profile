@@ -23,3 +23,14 @@ $blue:  #66d9ef;
         }
     }
 }
+
+@media only screen and (max-width : 900px){
+    .contact{
+        .content {
+            .maillink{
+                font-size: 22px;
+                word-wrap: break-word;
+            }
+        }
+    } 
+}

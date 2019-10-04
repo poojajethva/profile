@@ -43,17 +43,9 @@ $green: #86b42b;
         color: $white;
         position: relative;
         overflow: hidden;
+        padding: 0 10px;
         
-        p{
-            overflow: hidden;
-            white-space: nowrap;
-            animation: type 4s steps(60, end);
-            margin: 3px auto;
-        }
-        .line2{
-            animation: type2 8s steps(60, end);
-          }
-
+        
         .txt{
             color: $red;
             font-weight: bold;
@@ -64,22 +56,32 @@ $green: #86b42b;
         .cursor{
             animation: blink 1s infinite;
         }
+        
+        .line{
+            overflow: hidden;
+            white-space: nowrap;
+            animation: type 4s steps(60, end);
+            margin: 3px auto;
+        }
+        .line2{
+            animation: type2 8s steps(60, end);
+        }
     }
-
+    
     @keyframes type{ 
         from { width: 0; } 
         to {width: 100%;}
-      } 
-
-      @keyframes blink{
+    } 
+    
+    @keyframes blink{
         to{opacity: .0;}
-      }
-
-      @keyframes type2{
+    }
+    
+    @keyframes type2{
         0%{width: 0;}
         50%{width: 0;}
         100%{ width: 100%; } 
-      } 
+    } 
     
     .btnHome{
         font-size: 16px;
@@ -97,7 +99,7 @@ $green: #86b42b;
         transition: all 0.3s ease-in-out;
         text-align: center;
         font-weight: bold;
-
+        
         &:before, &:after {
             content: '';
             display: block;
@@ -133,7 +135,7 @@ $green: #86b42b;
     }
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 900px){
     .home{
         .content {
             text-align: center;
@@ -141,6 +143,23 @@ $green: #86b42b;
         }
         .btnHome{
             font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width : 599px){
+    .home{
+        .magic{
+            display: none;
+        }
+        .content{
+            .line{
+                white-space: normal;
+                animation: none;
+            }
+            .line2{
+                animation: none;
+            }
         }
     }
 }

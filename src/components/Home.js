@@ -5,7 +5,8 @@ import '../assets/css/home.scss';
 export default class Home extends Component{
     constructor(props) {
         super(props);
-        this.state = { left: 0, top: 0 };
+        this.state = { left: 0, top: 0};
+        // this.removeClassAnimation = this.removeClassAnimation.bind(this);
     }
     moveMagicBg(e){
         let magicWHalf = document.querySelector(".magic").offsetWidth / 2;
@@ -20,12 +21,12 @@ export default class Home extends Component{
             <div className="home" onMouseMove={this.moveMagicBg.bind(this)}>
                 <div className="magic" style={this.state}></div>
                 <div className="content">
-                    <p className="line1">
+                    <p className="line line1">
                         Hi, I’m&nbsp;<span className="sign">&lt;</span>
                         <span className="txt">Pooja Jethva</span>
                         <span className="sign"> /&gt;</span>;
                     </p>
-                    <p className="line2">
+                    <p className="line line2">
                         I’m a <span className="txt2">UI Developer</span>.
                         <span className="cursor">|</span>
                     </p>
